@@ -20,7 +20,7 @@ int main()
  printf("id: %d\n", id);
 
  v.mtype=25;
- strcpy(v.data, "amey");
+ strcpy(v.data, "pallavi");
  msgsnd(id, &v, strlen(v.data)+1, 0);
 
  msgctl(id, IPC_STAT, &buf);
